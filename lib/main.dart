@@ -1,3 +1,4 @@
+import 'package:app_collage/Screens/ScreenAdd.dart';
 import 'package:app_collage/Screens/ScreenList.dart';
 import 'package:app_collage/Screens/screenLogin.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,8 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home:Screenlist(),
+      // home:ScreenAdd( isEditMode: false,),
+      home: Screenlogin(),
     );
   }
 }

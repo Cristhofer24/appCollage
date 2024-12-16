@@ -86,7 +86,12 @@ Future<void> login(email, password, context)  async {
     password: password
   
   );
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>ScreenAdd()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>ScreenAdd(
+       isEditMode: false, // Indicamos que estamos en modo edición
+                            
+
+
+      )));
 
 } on FirebaseAuthException catch (e) {
   if (e.code == 'user-not-found') {
